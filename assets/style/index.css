@@ -10,16 +10,17 @@
     --primary-font-color: rgb(255, 255, 255);
     --primary-section-bg: rgb(255 255 255 / 0.05);
     --primary-border-color: rgb(255 255 255 / 0.07);
-	--primary-red: #ff3c57;
-	--primary-green: #33ab4e;
-	--primary-purple: #833cff;
-	--primary-orange: #ff833c;
-	--primary-blue: #3c57ff;
-	--primary-blue-hover: #364ee6;
+    --primary-pink: #e17396;
+    --primary-green: #33ab4e;
+    --primary-purple: #7e7aec;
+    --primary-orange: #ff833c;
+    --primary-blue: #3c57ff;
+    --primary-blue-hover: #364ee6;
+    --primary-red-hover: #ff3c57;
 }
 
 body {
-	background-color: #191720;
+	background-color: var(--primary-pink);
 	font-family: 'Poppins', sans-serif;
     margin: 0;
     overflow: hidden; 
@@ -132,6 +133,10 @@ img.header-logo {
     width: 40%;
 }
 
+/* Guessing game CSS */
+
+
+
 /* #message {
 	visibility: hidden;
 	opacity: 0;
@@ -161,96 +166,6 @@ section p {
     height: 10px;
 }
 
-.modal-title {
-    padding: 15px;
-    width: 100%;
-    background: linear-gradient(var(--app-pink), var(--app-purple));
-    border: 1px solid linear-gradient(var(--app-pink), var(--app-purple));
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#modal-content {
-    border: 1px solid var(--primary-border-color);
-    padding: 10px;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-#modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    background-color: var(--primary-bg-dark);
-    border-radius: 1rem;
-    cursor: default;
-    overflow: hidden;
-    z-index: 9999;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: translate(-50%, -52%);
-    -moz-transform: translate(-50%, -52%);
-    transform: translate(-50%, -52%);
-}
-
-/*- - - - - - - - - - - - - - - - - - - - - - - - - - */
-/*   Overlay                                             */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: 5555;
-  opacity: 0;
-  visibility: hidden;
-  background-color: rgba(16, 18, 20, .55);
-  cursor: pointer
-}
-
-#overlay.is-visible {
-  opacity: 1;
-  visibility: visible;
-}
-
-
-#modal.is-visible{
-    display: flex;
-    flex-direction: column;
-    z-index: 9999;
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-#modal-content #overlay{
-    transition: all .2s ease-in-out;
-}
-
-/* The Close Button */
-.close {
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-}
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
   footer {
     height: 60px;
 }
