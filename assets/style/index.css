@@ -40,10 +40,15 @@ main {
 
 header {
     height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
 }
 
 h1 {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 h2 {
@@ -134,14 +139,20 @@ img.header-logo {
 }
 
 /* Guessing game CSS */
-
-
+input#input-number {
+    padding: 40px;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+input#input-number::placeholder {
+    color: #ffffff87;
+}
 
 /* #message {
 	visibility: hidden;
 	opacity: 0;
 }
-
 #message.is-visible {
 	visibility: visible;
 	opacity: 1;

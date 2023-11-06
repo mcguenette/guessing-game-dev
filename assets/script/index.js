@@ -15,3 +15,6 @@ function onEvent(event, selector, callback) {
 };
   
 
+function numberOfGuesses() {
+    
+}

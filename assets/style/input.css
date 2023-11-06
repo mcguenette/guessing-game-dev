@@ -51,7 +51,8 @@ main h2 {
 
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+#message {
     margin-top: 5px;
     margin-bottom: 10px;
     width: 330px;
