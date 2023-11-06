@@ -1,0 +1,168 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Form                                                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+:root {
+    --primary-dark-bg: #1a1d28;
+    --primary-red: #ff3c57;
+    --primary-pink: #e17396;
+    --primary-green: #33ab4e;
+    --primary-purple: #7e7aec;
+    --primary-orange: #ff833c;
+    --primary-blue: #3c57ff;
+    --primary-blue-hover: #364ee6;
+    --primary-red-hover: #ff3c57;
+}
+
+
+
+h2 {
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+
+
+h3 {
+    font-weight: 400;
+}
+
+
+
+.form {
+    margin-top: 60px;
+    width: 600px;
+    font-size: 0;
+}
+
+
+
+.form p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+
+main h2 {
+    font-size: 24px;
+}
+
+
+
+input[type="text"],
+input[type="email"] {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 330px;
+    height: 48px;
+    padding: 0 15px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .2) 0px 26px 30px -10px, rgba(0, 0, 0, .2) 0px 16px 10px -10px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+}
+
+textarea {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 330px;
+    height: 100px;
+    padding: 7px 15px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .2) 0px 26px 30px -10px, rgba(0, 0, 0, .2) 0px 16px 10px -10px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+}
+
+label {
+    display: block;
+    text-align: left;
+}
+
+form input+input {
+    margin-top: 15px;
+}
+
+
+
+input:focus {
+    border: 1px solid rgba(255, 255, 255, .25);
+}
+
+
+
+.primary-button,
+.secondary-button {
+    margin-left: 15px;
+    width: 132px;
+    height: 46px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, .2) 0px 26px 30px -10px, rgba(0, 0, 0, .2) 0px 16px 10px -10px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .2px;
+    transition: all 0.25s ease-in-out;
+    color: #fff;
+    cursor: pointer;
+}
+
+.primary-button {
+    background: linear-gradient(to right, var(--primary-pink) 0%, var(--primary-purple) 51%, var(--primary-pink) 100%);
+    /* background: linear-gradient(var(--app-pink), var(--app-purple)); */
+    border: 1px solid linear-gradient(var(--primary-pink), var(--primary-purple));
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+
+.secondary-button {
+    background: #ffffff2e;
+    border: 1px solid #fff;
+}
+
+.secondary-button:hover {
+    background: var(--primary-pink);
+    border: 1px solid var(--primary-pink);
+}
+.primary-button:hover {
+    background-position: right center;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Dark mode                                            */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+body.dark {
+    background-color: #202127;
+}
+
+
+
+body.dark .container main section h2,
+body.dark .container main section .result p {
+    color: #fff;
+}
+
+
+
+body.dark .container main section input[type="text"] {
+    color: #fff;
+}
+
+
+
+body.dark .container main section .result {
+    background-color: #33343d;
+}

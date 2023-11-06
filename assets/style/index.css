@@ -1,0 +1,257 @@
+@charset "utf-8";
+@import url(./reset.css);
+@import url(./input.css);
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Main                                                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+:root {
+	--primary-bg-dark: rgb(25, 23, 32);
+    --primary-font-color: rgb(255, 255, 255);
+    --primary-section-bg: rgb(255 255 255 / 0.05);
+    --primary-border-color: rgb(255 255 255 / 0.07);
+	--primary-red: #ff3c57;
+	--primary-green: #33ab4e;
+	--primary-purple: #833cff;
+	--primary-orange: #ff833c;
+	--primary-blue: #3c57ff;
+	--primary-blue-hover: #364ee6;
+}
+
+body {
+	background-color: #191720;
+	font-family: 'Poppins', sans-serif;
+    margin: 0;
+    overflow: hidden; 
+}
+
+.container {
+    width: min(100% - 80px, 1080px);
+    margin-inline: auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+header {
+    height: 80px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+h3 + h3 {
+	margin-top: 4px;
+}
+
+h1,
+h2,
+h3,
+p,
+span,
+label {
+	color: var(--primary-font-color);
+}
+
+section p,
+article p {
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+li {
+    list-style: none;
+}
+
+img.header-logo {
+    width: 150px;
+}
+
+#four,
+#increase {
+	cursor: pointer;
+}
+
+#heading {
+	margin-bottom: 40px;
+}
+
+#list {
+	list-style: none;
+	display: inline-block;
+}
+
+#list li {
+	font-size: 20px;
+	color: #f4f6f8;
+	transition: all .25s ease-in-out;
+	cursor: pointer;
+}
+
+#list li:hover {
+	color: #0f9;
+}
+
+#list li+li {
+	margin-top: 15px;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 60px;
+    height: 100%;
+}
+
+.left-nav {
+    width: 60%;
+}
+
+.right-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+}
+
+/* #message {
+	visibility: hidden;
+	opacity: 0;
+}
+
+#message.is-visible {
+	visibility: visible;
+	opacity: 1;
+} */
+
+/* ----------------------------------------- */
+/*                 Sections                  */
+/* ----------------------------------------- */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section + section {
+	margin-top: 30px;
+}
+
+section p {
+    height: 10px;
+}
+
+.modal-title {
+    padding: 15px;
+    width: 100%;
+    background: linear-gradient(var(--app-pink), var(--app-purple));
+    border: 1px solid linear-gradient(var(--app-pink), var(--app-purple));
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#modal-content {
+    border: 1px solid var(--primary-border-color);
+    padding: 10px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: var(--primary-bg-dark);
+    border-radius: 1rem;
+    cursor: default;
+    overflow: hidden;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate(-50%, -52%);
+    -moz-transform: translate(-50%, -52%);
+    transform: translate(-50%, -52%);
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*   Overlay                                             */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 5555;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(16, 18, 20, .55);
+  cursor: pointer
+}
+
+#overlay.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+#modal.is-visible{
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#modal-content #overlay{
+    transition: all .2s ease-in-out;
+}
+
+/* The Close Button */
+.close {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  footer {
+    height: 60px;
+}
+
