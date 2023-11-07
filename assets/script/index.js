@@ -15,6 +15,11 @@ function onEvent(event, selector, callback) {
 };
   
 
+const output = target('#message');
+const totalGuesses = target('#guesses');
+const enterGuess = target('#input-number');
+let count = 0;
 function numberOfGuesses() {
     
-}
+};
+

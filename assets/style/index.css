@@ -11,6 +11,7 @@
     --primary-section-bg: rgb(255 255 255 / 0.05);
     --primary-border-color: rgb(255 255 255 / 0.07);
     --primary-pink: #e17396;
+    --secondary-pink: #ff3a79;
     --primary-green: #33ab4e;
     --primary-purple: #7e7aec;
     --primary-orange: #ff833c;
@@ -20,14 +21,14 @@
 }
 
 body {
-	background-color: var(--primary-pink);
+	background-color: var(--secondary-pink);
 	font-family: 'Poppins', sans-serif;
     margin: 0;
     overflow: hidden; 
 }
 
 .container {
-    width: min(100% - 80px, 1080px);
+    width: min(100% - 120px, 1080px);
     margin-inline: auto;
 }
 
@@ -39,7 +40,7 @@ main {
 }
 
 header {
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
