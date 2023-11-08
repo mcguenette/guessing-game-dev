@@ -40,7 +40,7 @@ onEvent('keydown', enterGuess, function (event) {
 function handleGuess() {
     if (remainingGuesses > 0) {
         const guess = parseInt(enterGuess.value);
-
+        console.log(secretNumber);
         if (!isNaN(guess) && guess >= 1 && guess <= 50) {
             if (guess === secretNumber) {
                 output.textContent = 'Congratulations! You guessed the correct number!';
@@ -54,11 +54,10 @@ function handleGuess() {
             remainingGuesses--;
             totalGuesses.textContent = remainingGuesses;
 
-            if (remainingGuesses === 0) {
+            if (remainingGuesses === 0 && secretNumber !== guess) {
                 output.textContent = `Out of guesses! My number was ${secretNumber}.`;
                 btnGuess.disabled = true;
             }
-
             enterGuess.value = '';
         } else {
             output.textContent = 'Please enter a valid number between 1 and 50.';
