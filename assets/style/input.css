@@ -55,7 +55,7 @@ input[type="text"], input[type="email"], #message {
     height: 48px;
     padding: 0 15px;
     border: 1px solid rgba(255, 255, 255, .1);
-    background-color: rgb(255 136 89 / 82%);
+    background-color: rgb(238 74 117 / 56%);
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, .2) 0px 26px 30px -10px, rgba(0, 0, 0, .2) 0px 16px 10px -10px;
     font-size: 17px;
@@ -118,7 +118,7 @@ input:focus {
 }
 
 .primary-button {
-    background: linear-gradient(to right, #ff8859 50%, #5f0b95 100%);
+    background: linear-gradient(to right, #00b9f2f0 50%, #ff206ee0 100%);
     transition: 0.5s;
     color: #ffffff;
     background-size: 200% auto;

@@ -30,23 +30,23 @@
 
 <body>
     <header>
-        <input type="button" class="primary-button" value="Play Again">
+        <input type="button" id="play-again" class="primary-button" value="Play Again">
     </header>
     <main>
         <div class="container">
-            <h1>
-                Guess the number
-            </h1>
-            <h2>Guesses remaining: <span id="guesses"></span></h2>
-            <section>
-                <input type="text" id="input-number"
-                    placeholder="Enter a guess" />
+            <section class="section-wrapper">
+                <h1>
+                    Guess the number
+                </h1>
+                <h2>Guesses remaining: <span id="guesses"></span></h2>
+                <section>
+                    <input type="text" id="input-number" placeholder="0" />
+                </section>
+                <section>
+                    <p id="message"></p>
+                    <input type="button" id="guess-button" class="primary-button" value="Guess">
+                </section>
             </section>
-            <section>
-                <p id="message"></p>
-                <input type="button" class="primary-button" value="Reset">
-            </section>
-
         </div>
     </main>
     <footer></footer>

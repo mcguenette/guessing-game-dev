@@ -21,7 +21,7 @@
 }
 
 body {
-    background: url(../img/5205474.jpg);
+    background: url(../img/3507750.jpg);
     background-size: cover;
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -147,7 +147,10 @@ input#input-number {
     border-radius: 50%;
     height: 200px;
     width: 200px;
+    text-align: center;
+    font-size: 62px;
 }
+
 input#input-number::placeholder {
     color: #fff;
 }
@@ -170,6 +173,10 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+section.section-wrapper {
+    padding: 40px;
 }
 
 section + section {
