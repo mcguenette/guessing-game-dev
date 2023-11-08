@@ -6,7 +6,7 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 :root {
-	--primary-bg-dark: rgb(25, 23, 32);
+    --primary-bg-dark: rgb(25, 23, 32);
     --primary-font-color: rgb(255, 255, 255);
     --primary-section-bg: rgb(255 255 255 / 0.05);
     --primary-border-color: rgb(255 255 255 / 0.07);
@@ -21,11 +21,9 @@
 }
 
 body {
-
     background: url(../img/3507750.jpg);
     background-size: cover;
     font-family: 'Poppins', sans-serif;
-	  font-family: 'Poppins', sans-serif;
     margin: 0;
     overflow: hidden;
     background-position: center;
@@ -60,8 +58,8 @@ h1 {
 }
 
 h2 {
-	font-size: 20px;
-	font-weight: 400;
+    font-size: 20px;
+    font-weight: 400;
     color: #fff;
     margin-bottom: 30px;
     margin-top: 20px;
