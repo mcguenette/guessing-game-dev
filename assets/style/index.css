@@ -21,9 +21,11 @@
 }
 
 body {
+
     background: url(../img/3507750.jpg);
     background-size: cover;
     font-family: 'Poppins', sans-serif;
+	  font-family: 'Poppins', sans-serif;
     margin: 0;
     overflow: hidden;
     background-position: center;
