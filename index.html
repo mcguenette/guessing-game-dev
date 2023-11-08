@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-      <meta charset="utf-8" dir="ltr">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="author" content="MC Guenette">
-      <meta name="description"
-            content="MC Guenette: Software Developer Portfolio">
-      <meta name="keywords"
-            content="web developer, web, front-end, css, javascript, html, react">
-      <link rel="shortcut icon"
-            href="https://res.cloudinary.com/dzdgpwtox/image/upload/v1656263678/designer-tool-uploads/bucket_9200/1656263676160.png"
-            type="image/x-icon">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap"
-            rel="stylesheet">
-      <link href="https://db.onlinewebfonts.com/c/2ec3ff0d589a5e3203c12ad898857451?family=GT+Haptik+Regular"
-            rel="stylesheet" type="text/css" />
-      <link href="https://db.onlinewebfonts.com/c/07342dff729e3ff82873f8eeee4c9612?family=GT+Haptik+Bold"
-            rel="stylesheet" type="text/css" />
-      <link rel="stylesheet" href="./assets/style/index.css">
-      <script src="./assets/script/index.js" defer></script>
-      <title></title>
+    <meta charset="utf-8" dir="ltr">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="MC Guenette">
+    <meta name="description"
+        content="MC Guenette: Software Developer Portfolio">
+    <meta name="keywords"
+        content="web developer, web, front-end, css, javascript, html, react">
+    <link rel="shortcut icon"
+        href="https://res.cloudinary.com/dzdgpwtox/image/upload/v1656263678/designer-tool-uploads/bucket_9200/1656263676160.png"
+        type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://db.onlinewebfonts.com/c/2ec3ff0d589a5e3203c12ad898857451?family=GT+Haptik+Regular"
+        rel="stylesheet" type="text/css" />
+    <link
+        href="https://db.onlinewebfonts.com/c/07342dff729e3ff82873f8eeee4c9612?family=GT+Haptik+Bold"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./assets/style/index.css">
+    <script src="./assets/script/index.js" defer></script>
+    <title></title>
 </head>
+
 <body>
-<div class="container">
-    <h2>Guesses: <span id="guesses"></span> </h2>
-</div>
+    <header>
+        <input type="button" id="play-again" class="primary-button" value="Play Again">
+    </header>
+    <main>
+        <div class="container">
+            <section class="section-wrapper">
+                <h1>Guess the number</h1>
+                <h2>Guesses remaining: <span id="guesses">5</span></h2>
+                <section>
+                    <input type="text" id="input-number" placeholder="0" />
+                </section>
+                <section>
+                    <p id="message"></p>
+                    <input type="button" id="guess-button" class="primary-button" value="Guess">
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
 </body>
 </html>

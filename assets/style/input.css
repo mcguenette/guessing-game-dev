@@ -14,57 +14,40 @@
     --primary-red-hover: #ff3c57;
 }
 
-
-
-h2 {
-    font-weight: 400;
-    margin-bottom: 40px;
-}
-
-
-
-h3 {
-    font-weight: 400;
-}
-
-
-
-.form {
-    margin-top: 60px;
-    width: 600px;
-    font-size: 0;
-}
-
-
-
-.form p {
-    margin-top: 20px;
-    font-size: 16px;
-}
-
-
-
 main h2 {
     font-size: 24px;
 }
 
-
-
-input[type="text"],
-input[type="email"] {
+input[type="text"], input[type="email"], #message {
     margin-top: 5px;
     margin-bottom: 10px;
-    width: 330px;
-    height: 48px;
+    width: 275px;
+    height: 75px;
     padding: 0 15px;
     border: 1px solid rgba(255, 255, 255, .1);
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgb(238 74 117 / 56%);
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, .2) 0px 26px 30px -10px, rgba(0, 0, 0, .2) 0px 16px 10px -10px;
     font-size: 17px;
     font-weight: 400;
-    color: #fff;
+    color: #ffffff;
     text-align: left;
+}
+
+input#guess-button:disabled {
+    background: #4c5276c2;
+    color: #8288a3;
+    cursor: default;
+}
+
+span#guesses {
+    color: #ff5f4f;
+    font-weight: 700;
+}
+
+#message {
+    margin-bottom: 40px;
+    line-height: 1.25;
 }
 
 textarea {
@@ -117,10 +100,9 @@ input:focus {
 }
 
 .primary-button {
-    background: linear-gradient(to right, var(--primary-pink) 0%, var(--primary-purple) 51%, var(--primary-pink) 100%);
-    /* background: linear-gradient(var(--app-pink), var(--app-purple)); */
-    border: 1px solid linear-gradient(var(--primary-pink), var(--primary-purple));
+    background: linear-gradient(to right, #00b9f2f0 50%, #ff206ee0 100%);
     transition: 0.5s;
+    color: #ffffff;
     background-size: 200% auto;
 }
 

@@ -11,6 +11,7 @@
     --primary-section-bg: rgb(255 255 255 / 0.05);
     --primary-border-color: rgb(255 255 255 / 0.07);
     --primary-pink: #e17396;
+    --secondary-pink: #ff3a79;
     --primary-green: #33ab4e;
     --primary-purple: #7e7aec;
     --primary-orange: #ff833c;
@@ -20,36 +21,52 @@
 }
 
 body {
-	background-color: var(--primary-pink);
-	font-family: 'Poppins', sans-serif;
+
+    background: url(../img/3507750.jpg);
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+	  font-family: 'Poppins', sans-serif;
     margin: 0;
-    overflow: hidden; 
+    overflow: hidden;
+    background-position: center;
 }
 
 .container {
-    width: min(100% - 80px, 1080px);
+    width: min(100% - 120px, 1080px);
     margin-inline: auto;
 }
 
 main {
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100dvh;
 }
 
 header {
-    height: 80px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
 }
 
 h1 {
-    margin-bottom: 20px;
+    font-family: 'Agbalumo';
+    font-size: 54px;
+    font-weight: 600;
+    color: #fdfdfe;
+    text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #f519ff, 0px 0px 10px #b393d3, 0px 0px 20px #b393d3;
+    letter-spacing: 2.5px;
 }
 
 h2 {
 	font-size: 20px;
-	font-weight: 600;
+	font-weight: 400;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
+
 
 h3 {
 	font-size: 18px;
@@ -66,8 +83,9 @@ h3,
 p,
 span,
 label {
-	color: var(--primary-font-color);
+    text-align: center;
 }
+
 
 section p,
 article p {
@@ -134,14 +152,30 @@ img.header-logo {
 }
 
 /* Guessing game CSS */
+input#input-number {
+    padding: 40px;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-size: 82px;
+}
 
+input#input-number::placeholder {
+    color: #fff;
+}
 
+p#message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 /* #message {
 	visibility: hidden;
 	opacity: 0;
 }
-
 #message.is-visible {
 	visibility: visible;
 	opacity: 1;
@@ -158,8 +192,12 @@ section {
     text-align: center;
 }
 
+section.section-wrapper {
+    padding: 40px;
+}
+
 section + section {
-	margin-top: 30px;
+    margin-top: 20px;
 }
 
 section p {
