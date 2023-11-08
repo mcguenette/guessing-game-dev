@@ -21,23 +21,16 @@ let remainingGuesses = 5;
 function generateRandomNumber() {
     return Math.floor(Math.random() * 50) + 1;
 }
-
-// Function to simplify getting elements by ID
-function target(id) {
-    return document.getElementById(id);
-}
-
-// Get references to HTML elements using the "target" function
 const enterGuess = target('input-number');
 const output = target('message');
 const totalGuesses = target('guesses');
 const btnGuess = target('guess-button');
 const playAgain = target('play-again');
 
-// Add an event listener to the "Guess" button
+// "Guess" button
 onEvent('click', btnGuess, handleGuess);
 
-// Add an event listener to the input field to handle "Enter" key press
+// "Enter" key press
 onEvent('keydown', enterGuess, function (event) {
     if (event.key === 'Enter') {
         handleGuess();
@@ -77,7 +70,7 @@ function handleGuess() {
         }
 };
 
-// Add an event listener to the "Play Again" button
+// "Play Again" button
 onEvent('click', playAgain, function () {
     // Reset the game
     secretNumber = generateRandomNumber();
