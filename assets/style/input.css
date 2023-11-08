@@ -14,36 +14,6 @@
     --primary-red-hover: #ff3c57;
 }
 
-
-
-h2 {
-    font-weight: 400;
-    margin-bottom: 40px;
-}
-
-
-
-h3 {
-    font-weight: 400;
-}
-
-
-
-.form {
-    margin-top: 60px;
-    width: 600px;
-    font-size: 0;
-}
-
-
-
-.form p {
-    margin-top: 20px;
-    font-size: 16px;
-}
-
-
-
 main h2 {
     font-size: 24px;
 }
@@ -51,8 +21,8 @@ main h2 {
 input[type="text"], input[type="email"], #message {
     margin-top: 5px;
     margin-bottom: 10px;
-    width: 250px;
-    height: 48px;
+    width: 275px;
+    height: 75px;
     padding: 0 15px;
     border: 1px solid rgba(255, 255, 255, .1);
     background-color: rgb(238 74 117 / 56%);
@@ -64,8 +34,20 @@ input[type="text"], input[type="email"], #message {
     text-align: left;
 }
 
+input#guess-button:disabled {
+    background: #4c5276c2;
+    color: #8288a3;
+    cursor: default;
+}
+
+span#guesses {
+    color: #ff5f4f;
+    font-weight: 700;
+}
+
 #message {
     margin-bottom: 40px;
+    line-height: 1.25;
 }
 
 textarea {
