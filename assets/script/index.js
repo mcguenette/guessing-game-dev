@@ -31,7 +31,7 @@ const btnGuess = target('#guess-button');
 const playAgain = target('#play-again');
 
 // Add an event listener to the 'Guess' button
-btnGuess.onEvent('click', function () {
+onEvent('click', btnGuess, function () {
     if (remainingGuesses > 0) {
         const guess = parseInt(enterGuess.value);
 
@@ -59,7 +59,7 @@ btnGuess.onEvent('click', function () {
 });
 
 // Add an event listener to the 'Play Again' button
-playAgain.addEventListener('click', function () {
+onEvent('click', playAgain, function () {
     // Reset the game
     secretNumber = Math.floor(Math.random() * 50) + 1;
     remainingGuesses = 5;
