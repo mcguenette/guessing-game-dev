@@ -21,10 +21,12 @@
 }
 
 body {
-	background-color: var(--secondary-pink);
-	font-family: 'Poppins', sans-serif;
+    background: url(../img/5205474.jpg);
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    overflow: hidden; 
+    overflow: hidden;
+    background-position: center;
 }
 
 .container {
@@ -33,7 +35,6 @@ body {
 }
 
 main {
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100dvh;
@@ -48,8 +49,8 @@ header {
 }
 
 h1 {
-    margin-bottom: 20px;
-    text-align: center;
+    font-family: 'Agbalumo';
+    font-size: 54px;
 }
 
 h2 {
@@ -73,6 +74,7 @@ p,
 span,
 label {
 	color: var(--primary-font-color);
+    text-align: center;
 }
 
 section p,
@@ -147,7 +149,7 @@ input#input-number {
     width: 200px;
 }
 input#input-number::placeholder {
-    color: #ffffff87;
+    color: #fff;
 }
 
 /* #message {
@@ -171,7 +173,7 @@ section {
 }
 
 section + section {
-	margin-top: 30px;
+    margin-top: 20px;
 }
 
 section p {

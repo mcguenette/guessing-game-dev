@@ -48,22 +48,24 @@ main h2 {
     font-size: 24px;
 }
 
-input[type="text"],
-input[type="email"],
-#message {
+input[type="text"], input[type="email"], #message {
     margin-top: 5px;
     margin-bottom: 10px;
-    width: 330px;
+    width: 250px;
     height: 48px;
     padding: 0 15px;
     border: 1px solid rgba(255, 255, 255, .1);
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgb(255 136 89 / 82%);
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, .2) 0px 26px 30px -10px, rgba(0, 0, 0, .2) 0px 16px 10px -10px;
     font-size: 17px;
     font-weight: 400;
-    color: #fff;
+    color: #ffffff;
     text-align: left;
+}
+
+#message {
+    margin-bottom: 40px;
 }
 
 textarea {
@@ -116,10 +118,9 @@ input:focus {
 }
 
 .primary-button {
-    background: linear-gradient(to right, var(--primary-pink) 0%, var(--primary-purple) 51%, var(--primary-pink) 100%);
-    /* background: linear-gradient(var(--app-pink), var(--app-purple)); */
-    border: 1px solid linear-gradient(var(--primary-pink), var(--primary-purple));
+    background: linear-gradient(to right, #ff8859 50%, #5f0b95 100%);
     transition: 0.5s;
+    color: #ffffff;
     background-size: 200% auto;
 }
 
