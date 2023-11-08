@@ -20,20 +20,12 @@ let remainingGuesses = 5;
 function generateRandomNumber() {
     return Math.floor(Math.random() * 50) + 1;
 }
-<<<<<<< Updated upstream
-const enterGuess = target('input-number');
-const output = target('message');
-const totalGuesses = target('guesses');
-const btnGuess = target('guess-button');
-const playAgain = target('play-again');
-=======
 
 const enterGuess = target('#input-number');
 const output = target('#message');
 const totalGuesses = target('#guesses');
 const btnGuess = target('#guess-button');
 const playAgain = target('#play-again');
->>>>>>> Stashed changes
 
 // "Guess" button
 onEvent('click', btnGuess, handleGuess);
